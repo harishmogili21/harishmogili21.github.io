@@ -57,13 +57,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Animated skill highlights on hover
-  document.querySelectorAll('.skill').forEach(skill => {
-    skill.addEventListener('mouseenter', function() {
-      this.classList.add('highlight');
+  // Enhanced scroll animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+      }
     });
-    skill.addEventListener('mouseleave', function() {
-      this.classList.remove('highlight');
-    });
+  }, observerOptions);
+
+  document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
   });
 }); 

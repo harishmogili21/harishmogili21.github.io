@@ -4,77 +4,140 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harish Mogili | Gen AI Developer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio of Harish Mogili, Gen AI Developer. Projects, experience, education, and contact.">
+  <meta name="keywords" content="Harish Mogili, Gen AI, Portfolio, AI Developer, Projects, Resume">
+  <meta name="author" content="Harish Mogili">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Harish Mogili</h1>
-    <p>Gen AI Developer | <a class="profile-link" href="mailto:harishmogili166@gmail.com">harishmogili166@gmail.com</a> | <a class="profile-link" href="https://github.com/harishmogili21" target="_blank">GitHub</a> | <a class="profile-link" href="https://www.linkedin.com/in/harish-mogili-406a0b314" target="_blank">LinkedIn</a></p>
-    <nav style="margin-top:1rem;">
-      <a class="profile-link" href="#about">About</a> |
-      <a class="profile-link" href="#projects">Projects</a> |
-      <a class="profile-link" href="#education">Education</a> |
-      <a class="profile-link" href="#certifications">Certifications</a> |
-      <a class="profile-link" href="#coursework">Coursework</a> |
-      <a class="profile-link" href="#involvement">Involvement</a> |
-      <a class="profile-link" href="#skills">Skills</a>
-      <button id="mode-toggle" style="margin-left:1.5rem;padding:0.3rem 1rem;border-radius:5px;border:none;cursor:pointer;background:#3182ce;color:#fff;">🌙 Toggle Dark Mode</button>
+    <nav class="navbar">
+      <a class="nav-link" href="#profile">Profile</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#education">Education</a>
+      <a class="nav-link" href="#certifications">Certifications</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <button id="mode-toggle" title="Toggle dark mode">🌙</button>
     </nav>
   </header>
-  <div class="container">
-    <section id="about">
-      <h2>About</h2>
-      <p>Entry level with a foundational understanding of Generative AI, Large Language Models (LLMs), and prompt engineering. Proficient in Python and experienced in building small-scale Gen AI projects using tools like Open AI, Hugging Face Transformers, and Lang Chain. Eager to contribute to innovative AI solutions in real-world applications.</p>
+  <main>
+    <section id="profile" class="profile-section">
+      <img src="profile.jpg" alt="Harish Mogili profile photo" class="profile-photo" />
+      <div class="profile-info">
+        <h1>Harish Mogili</h1>
+        <p class="profile-title">Gen AI Developer</p>
+        <p class="profile-summary">Entry level with a foundational understanding of Generative AI, Large Language Models (LLMs), and prompt engineering. Proficient in Python and experienced in building small-scale Gen AI projects using tools like Open AI, Hugging Face Transformers, and Lang Chain. Eager to contribute to innovative AI solutions in real-world applications.</p>
+        <div class="profile-links">
+          <a href="mailto:harishmogili166@gmail.com" class="profile-link">Email</a>
+          <a href="https://github.com/harishmogili21" class="profile-link" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/harish-mogili-406a0b314" class="profile-link" target="_blank">LinkedIn</a>
+          <a href="Harish_Mogili_Resume.pdf" class="profile-link" download>Download Resume</a>
+        </div>
+      </div>
     </section>
     <section id="projects">
       <h2>Projects</h2>
-      <button class="collapsible">Multimodal-product-analyzer <span style="font-weight:normal;">– <a class="project-link" href="https://github.com/harishmogili21/multimodal-product-analyzer" target="_blank">GitHub</a></span></button>
-      <div class="collapsible-content">
-        <p>Developed a Streamlit-based AI application to analyze ingredients in food and personal care products. Delivered detailed AI-powered ingredient reports, assessing health and safety implications.</p>
+      <div class="project-card">
+        <img src="project1.jpg" alt="Multimodal-product-analyzer screenshot" class="project-img" />
+        <div class="project-details">
+          <h3>Multimodal-product-analyzer <a href="https://github.com/harishmogili21/multimodal-product-analyzer" class="project-link" target="_blank">GitHub</a></h3>
+          <div class="tech-badges">
+            <span class="badge">Python</span><span class="badge">Streamlit</span><span class="badge">AI</span>
+          </div>
+          <p>Developed a Streamlit-based AI application to analyze ingredients in food and personal care products. Delivered detailed AI-powered ingredient reports, assessing health and safety implications.</p>
+        </div>
       </div>
-      <button class="collapsible">Arxiv Agent - AI-Powered Paper Assistant <span style="font-weight:normal;">– <a class="project-link" href="https://github.com/harishmogili21/Arxiv-Agent--AI-Paper-Assistant/tree/master" target="_blank">GitHub</a></span></button>
-      <div class="collapsible-content">
-        <p>Developed a hybrid Retrieval-Augmented Generation (RAG) system integrating Google Gemini LLM and Arxiv API to provide intelligent question-answering over AI research papers.<br><em>Technologies Used:</em> Python, Streamlit, FAISS, Google Gemini API, RAG pipeline, Arxiv API, CLI tools</p>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Arxiv Agent screenshot" class="project-img" />
+        <div class="project-details">
+          <h3>Arxiv Agent - AI-Powered Paper Assistant <a href="https://github.com/harishmogili21/Arxiv-Agent--AI-Paper-Assistant/tree/master" class="project-link" target="_blank">GitHub</a></h3>
+          <div class="tech-badges">
+            <span class="badge">Python</span><span class="badge">Streamlit</span><span class="badge">FAISS</span><span class="badge">Google Gemini API</span><span class="badge">RAG</span>
+          </div>
+          <p>Developed a hybrid Retrieval-Augmented Generation (RAG) system integrating Google Gemini LLM and Arxiv API to provide intelligent question-answering over AI research papers.</p>
+        </div>
       </div>
-      <button class="collapsible">Nutrisense-Assistant <span style="font-weight:normal;">– <a class="project-link" href="https://github.com/harishmogili21/Nutrisense-Nutrition-Assistant" target="_blank">GitHub</a></span></button>
-      <div class="collapsible-content">
-        <p>Developed a comprehensive AI-driven health assistant that delivers personalized nutrition and fitness recommendations via a sleek Streamlit web interface.<br><em>Technologies Used:</em> Streamlit, Python, Mistral AI, Exa API, SQLite</p>
+      <div class="project-card">
+        <img src="project3.jpg" alt="Nutrisense-Assistant screenshot" class="project-img" />
+        <div class="project-details">
+          <h3>Nutrisense-Assistant <a href="https://github.com/harishmogili21/Nutrisense-Nutrition-Assistant" class="project-link" target="_blank">GitHub</a></h3>
+          <div class="tech-badges">
+            <span class="badge">Python</span><span class="badge">Streamlit</span><span class="badge">Mistral AI</span><span class="badge">Exa API</span><span class="badge">SQLite</span>
+          </div>
+          <p>Developed a comprehensive AI-driven health assistant that delivers personalized nutrition and fitness recommendations via a sleek Streamlit web interface.</p>
+        </div>
       </div>
-      <button class="collapsible">Music-RAG-Enhanced <span style="font-weight:normal;">– <a class="project-link" href="https://github.com/harishmogili21/Music-RAG-Enhanced" target="_blank">GitHub</a></span></button>
-      <div class="collapsible-content">
-        <p>Developed an enhanced music recommendation system integrating Retrieval-Augmented Generation (RAG) and Reinforcement Learning from Human Feedback (RLHF) to deliver highly personalized suggestions.</p>
+      <div class="project-card">
+        <img src="project4.jpg" alt="Music-RAG-Enhanced screenshot" class="project-img" />
+        <div class="project-details">
+          <h3>Music-RAG-Enhanced <a href="https://github.com/harishmogili21/Music-RAG-Enhanced" class="project-link" target="_blank">GitHub</a></h3>
+          <div class="tech-badges">
+            <span class="badge">Python</span><span class="badge">RAG</span><span class="badge">RLHF</span>
+          </div>
+          <p>Developed an enhanced music recommendation system integrating Retrieval-Augmented Generation (RAG) and Reinforcement Learning from Human Feedback (RLHF) to deliver highly personalized suggestions.</p>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2022 - 2025</div>
+          <div class="timeline-content">
+            <h3>Captain, University Volleyball Team</h3>
+            <p>Mallareddy University Sports Association</p>
+            <ul>
+              <li>Led the team to 7 championship victories over 3 years.</li>
+              <li>Developed leadership, teamwork, and strategic planning skills.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Add more experience items here -->
       </div>
     </section>
     <section id="education">
       <h2>Education</h2>
-      <ul>
-        <li><strong>Bachelor of Technology (Computer Science Engineering)</strong>, Mallareddy University, Hyderabad, 2025, CGPA: 7.76<br>Strong academic focus on Mathematics, Python Programming, Machine Learning, Deep Learning, and DBMS.</li>
-        <li><strong>Intermediate (MPC)</strong>, Sri Chaitanya Junior College, Khammam, Telangana, 2021, 792/1000</li>
-        <li><strong>Schooling</strong>, Harvest Public School, Khammam, Telangana, 2019, GPA: 9.2</li>
-      </ul>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2021 - 2025</div>
+          <div class="timeline-content">
+            <h3>Bachelor of Technology (Computer Science Engineering)</h3>
+            <p>Mallareddy University, Hyderabad</p>
+            <p>CGPA: 7.76</p>
+            <ul>
+              <li>Mathematics, Python Programming, Machine Learning, Deep Learning, DBMS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2019 - 2021</div>
+          <div class="timeline-content">
+            <h3>Intermediate (MPC)</h3>
+            <p>Sri Chaitanya Junior College, Khammam, Telangana</p>
+            <p>Score: 792/1000</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2018 - 2019</div>
+          <div class="timeline-content">
+            <h3>Schooling</h3>
+            <p>Harvest Public School, Khammam, Telangana</p>
+            <p>GPA: 9.2</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="certifications">
       <h2>Certifications</h2>
-      <ul>
+      <ul class="cert-list">
         <li>AI Python for Beginners, Multinomial RAG: Chat with Videos, Pretraining LLMs – Deeplearning.ai (2025)</li>
         <li>Introduction to Generative AI Studio – Google Cloud (Simplilearn) (2025)</li>
         <li>Data Analytics using Python, Java (2023)</li>
         <li>Cambridge English Empower Level B2 (2022)</li>
-      </ul>
-    </section>
-    <section id="coursework">
-      <h2>Coursework</h2>
-      <ul>
-        <li>BCG GenAI Job Simulation on Forage (2025): AI-powered financial chatbot development for BCG's GenAI Consulting team. Experience in Python programming, pandas for data manipulation.</li>
-        <li>Deloitte Australia Technology Job Simulation on Forage (2025): Development and coding experience.</li>
-      </ul>
-    </section>
-    <section id="involvement">
-      <h2>Involvement</h2>
-      <ul>
-        <li>Captain of University Volleyball team, Mallareddy University Sports Association (June 2022 - April 2025). Led the team to 7 championship victories over 3 years.</li>
       </ul>
     </section>
     <section id="skills">
@@ -110,7 +173,19 @@
         <span class="skill">Problem-Solving</span>
       </div>
     </section>
-  </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form class="contact-form" action="https://formspree.io/f/mnqekgqg" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
   <button id="scroll-top-btn" title="Scroll to top">↑</button>
 </body>
 </html> 
