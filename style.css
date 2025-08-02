@@ -1,0 +1,100 @@
+body { font-family: 'Roboto', sans-serif; margin: 0; background: #f7f9fa; color: #222; }
+header { background: #2d3748; color: #fff; padding: 2rem 0; text-align: center; }
+header h1 { margin: 0; font-size: 2.5rem; }
+header p { margin: 0.5rem 0 0; font-size: 1.2rem; }
+.container { max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 2rem; }
+section { margin-bottom: 2.5rem; }
+h2 { color: #2d3748; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.3rem; margin-bottom: 1rem; }
+ul { padding-left: 1.2rem; }
+.project-link, .profile-link { color: #3182ce; text-decoration: none; }
+.project-link:hover, .profile-link:hover { text-decoration: underline; }
+.skills-list { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.skill { background: #e2e8f0; border-radius: 5px; padding: 0.3rem 0.8rem; font-size: 1rem; }
+@media (max-width: 600px) {
+  .container { padding: 1rem; }
+  header h1 { font-size: 1.5rem; }
+}
+/* Dark mode styles */
+body.dark-mode {
+  background: #181a1b;
+  color: #f7f9fa;
+}
+body.dark-mode header {
+  background: #23272f;
+  color: #fff;
+}
+body.dark-mode .container {
+  background: #23272f;
+  color: #f7f9fa;
+}
+body.dark-mode h2 {
+  color: #90cdf4;
+  border-bottom: 2px solid #374151;
+}
+body.dark-mode .skill {
+  background: #374151;
+  color: #f7f9fa;
+}
+
+/* Collapsible project details */
+.collapsible {
+  background: #e2e8f0;
+  color: #222;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s;
+}
+.collapsible.active, .collapsible:hover {
+  background: #cbd5e1;
+}
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #f1f5f9;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+body.dark-mode .collapsible {
+  background: #374151;
+  color: #f7f9fa;
+}
+body.dark-mode .collapsible-content {
+  background: #23272f;
+}
+
+/* Scroll-to-top button */
+#scroll-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+#scroll-top-btn:hover {
+  background: #2b6cb0;
+}
+
+/* Skill highlight animation */
+.skill.highlight {
+  background: #3182ce;
+  color: #fff;
+  transform: scale(1.08);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+} 
